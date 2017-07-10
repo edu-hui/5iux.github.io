@@ -9110,4 +9110,4 @@
 151.101.64.84	no.pinterest.com
 151.101.64.84	engineering.pinterest.com
 151.101.64.84	ak.pinterest.com
-151.101.64.84	*.pinterest.comh
+151.101.64.84	*.pinterest.com
