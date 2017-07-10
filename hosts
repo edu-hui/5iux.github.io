@@ -1,6 +1,5 @@
-# Go Hosts
-# 2017-07-07 13:57:28
-
+# DY Hosts
+# 2017-07-10 14:23
 
 127.0.0.1	localhost
 ::1	localhost ip6-localhost ip6-loopback
@@ -9111,4 +9110,4 @@
 151.101.64.84	no.pinterest.com
 151.101.64.84	engineering.pinterest.com
 151.101.64.84	ak.pinterest.com
-151.101.64.84	*.pinterest.com
+151.101.64.84	*.pinterest.comh
