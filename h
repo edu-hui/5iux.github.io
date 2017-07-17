@@ -1,10 +1,8 @@
 # DY Hosts
-<<<<<<< HEAD
-# 2017-07-17 
-=======
-# 2017-07-13 19:02:39
 
->>>>>>> 328f3e4e2dab60dcd1a8459a4d63506404639789
+# 2017-07-17 
+
+
 
 127.0.0.1	localhost
 ::1	localhost ip6-localhost ip6-loopback
@@ -9160,4 +9158,3 @@
 151.101.64.84	engineering.pinterest.com
 151.101.64.84	ak.pinterest.com
 151.101.64.84	*.pinterest.com
-
