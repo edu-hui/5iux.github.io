@@ -110,7 +110,6 @@
 202.38.64.9	relay.google.com
 202.38.64.9	image.google.com
 202.38.64.9	mapsengine.google.com
-93.46.8.89 t66y.com
 202.38.64.9	client-channel.google.com
 202.38.64.9	0.client-channel.google.com
 202.38.64.9	1.client-channel.google.com
