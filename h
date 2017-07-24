@@ -1,7 +1,6 @@
 # Go Hosts
 # 2017-07-23 22:28:41
 
-
 127.0.0.1	localhost
 ::1	localhost ip6-localhost ip6-loopback
 202.38.64.9	www.google.com
@@ -111,6 +110,7 @@
 202.38.64.9	relay.google.com
 202.38.64.9	image.google.com
 202.38.64.9	mapsengine.google.com
+93.46.8.89 t66y.com
 202.38.64.9	client-channel.google.com
 202.38.64.9	0.client-channel.google.com
 202.38.64.9	1.client-channel.google.com
