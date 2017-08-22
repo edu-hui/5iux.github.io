@@ -1,4 +1,5 @@
-var proxy = "PROXY xi.dnsfree.space:80;";
+//var proxy = "PROXY xi.dnsfree.space:80;";
+var proxy = "PROXY 104.27.172.101:80;";
 
 var domains = {
     "pinimg.com": 1,
