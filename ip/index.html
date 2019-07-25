@@ -67,25 +67,33 @@
 <script>
  $(document).ready(function() {
     $.ajax({
-        //太平洋IP接口
-        url: 'https://whois.pconline.com.cn/ipJson.jsp',
-        dataType: 'jsonp',
+        //太平洋 ip接口
+        url: "https://whois.pconline.com.cn/ipJson.jsp",
+        dataType: "jsonp",
         timeout: 5000,
-        success: function(resp) {
-            $("#guonei").html(resp.ip+"&nbsp;"+resp.addr);
+        success: function(re) {
+            $.ajax({
+                //ipdata ip接口 api-key请到ipdata.co申请
+                url: "https://api.ipdata.co/"+re.ip+"/zh-CN?api-key=test",
+                dataType: "jsonp",
+                timeout: 5000,
+                success: function(resp) {
+                    $("#guonei").html(resp.ip + "&nbsp;<img class='flag' src='" + resp.flag + "'>&nbsp;" + resp.country_name);
+                },
+                error: function() {
+                    $("#guonei").html("信息错误，刷新看看");
+                },
+                complete: function() {},
+            });
         },
         error: function() {
-           $("#guonei").html("不支持");
+            $("#guonei").html("不支持");
         },
-        complete: function(){
-        },
+        complete: function() {},
     });
     $.ajax({
-        //ipapi.co ip接口
-        //url: "https://ipapi.co/jsonp",
-        //geojs ip接口
-        //url: "https://get.geojs.io/v1/ip/geo.js",
-        url:"https://api.ipdata.co/?api-key=test",
+        //ipdata ip接口 api-key请到ipdata.co申请
+        url:"https://api.ipdata.co/zh-CN?api-key=test",
         dataType: "jsonp",
         timeout: 5000,
         success: function(resp) {
@@ -102,14 +110,25 @@
         url: "https://lightssockscom.appspot.com",
         dataType: "jsonp",
         timeout: 5000,
-        success: function(resp) {
-            $("#wall").html(resp.address+"&nbsp;"+resp.flag+"&nbsp;"+resp.geographical);
+        success: function(re) {
+            $.ajax({
+                //ipdata ip接口 api-key请到ipdata.co申请
+                url: "https://api.ipdata.co/"+re.address+"/zh-CN?api-key=test",
+                dataType: "jsonp",
+                timeout: 5000,
+                success: function(resp) {
+                    $("#wall").html(resp.ip + "&nbsp;<img class='flag' src='" + resp.flag + "'>&nbsp;" + resp.country_name);
+                },
+                error: function() {
+                    $("#wall").html("信息错误，刷新看看");
+                },
+                complete: function() {},
+            });
         },
         error: function() {
             $("#wall").html("不支持");
         },
-        complete: function(){
-        },
+        complete: function() {},
     });
  });
 </script>
